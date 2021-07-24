@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container py-4" style="background-color: rgb(241,245,246)">
+    <div class="p-5 mb-4  rounded-3" style="background-color: rgb(241,245,246)">
+    <div class="container-fluid">
+        <div class="card" >
+          <div class="card-body">
+              {%  if object.photo %}
+                <img class="card-img-top" src="{{ object.photo.url }}" alt="{{ object.title }}">
+              {% endif %}
+              <h1 class="card-title">{{ object.title }}</h1>
+              <h6 class="card-subtitle mb-2 text-muted">Author: {{ object.author }} | {{ object.date }}</h6>
+              <p class="card-text">{{ object.body | safe}}</p>
+            
+              <a href="{% url 'article_edit' article.pk%}" class="badge badge-info"><button type="button" class="btn btn-outline-secondary">Edit Post</button></a>
+              <a href="{% url 'article_delete' article.pk %}" class="badge badge-info"><button type="button" class="btn btn-outline-danger">Delete IT</button></a>
+              <a href="{% url 'article_list' %}" class="badge badge-info"><button type="button" class="btn btn-outline-secondary">See more</button></a>
+          </div>
+          <div class="card">
+            <div class="card-header">Comments</div>
+            {%  for comment in article.comments.all %}
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>{{ comment }}</p>
+                        <footer class="blockquote-footer">{{ comment.author }}</footer>
+                    </blockquote>
+                </div>
+            {% endfor %}
+            </div> 
+        </div>
+        <center style="padding-top: 30px;">            
+            <a href="{% url 'article_detail' object.pk|add:'-1'%}" class="badge badge-info"><button type="button" class="btn btn-outline-secondary">← Previous</button></a>
+            <a href="{% url 'article_list' %}" class="badge badge-info"><button type="button" class="btn btn-outline-secondary">See More</button></a>
+            <a href="{% url 'article_detail' object.pk|add:'1'%}" class="badge badge-info"><button type="button" class="btn btn-outline-secondary">Next →</button></a> 
+          </center> 
+        <p></p>
+    </div>
+</div>  
+{% endblock content %}
+
+  

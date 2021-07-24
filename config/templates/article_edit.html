@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+  
+  {% load crispy_forms_tags %}
+  {% block title %}My Blog | Edit {% endblock title %}
+  {% block content %}
+  <div class="container py-4">
+    <div class="p-5 mb-4 bg-light rounded-3">
+    <h1>Edit</h1>
+    <form method = 'post' enctype = "multipart/form-data"> {% csrf_token %}
+      {{form.media}}
+      {{ form | crispy }}
+
+    <button class = c type = "sumbit"> Save </button>
+    </form>
+    </div>
+    </div>  
+  {% endblock content %}

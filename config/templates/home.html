@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% block title %} My Blog | Homepage {% endblock title %}
+
+{% block content %} 
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+      <meta name="generator" content="Hugo 0.84.0">
+      <title>Jumbotron example · Bootstrap v5.0</title>
+  
+      <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/jumbotron/">
+  
+      
+  
+      <!-- Bootstrap core CSS -->
+  <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+      <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#7952b3">
+  <link href="../assets/fonts/feather/feather.css" rel="stylesheet" />
+<link href="../assets/libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+<link href="../assets/libs/dragula/dist/dragula.min.css" rel="stylesheet" />
+<link href="../assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" />
+<link href="../assets/libs/prismjs/themes/prism.css" rel="stylesheet" />
+<link href="../assets/libs/dropzone/dist/dropzone.css" rel="stylesheet" />
+<link href="../assets/libs/magnific-popup/dist/magnific-popup.css" rel="stylesheet" />
+<link href="../assets/libs/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+<link href="../assets/libs/@yaireo/tagify/dist/tagify.css" rel="stylesheet">
+<link href="../assets/libs/tiny-slider/dist/tiny-slider.css" rel="stylesheet">
+<link href="../assets/libs/tippy.js/dist/tippy.css" rel="stylesheet">
+<link href="../assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/theme.min.css">
+
+      
+    </head>
+    <body>
+      
+  <main>
+    <div class="container py-4"> 
+      <div class="p-5 mb-4 rounded-3" style="background-color: rgb(241,245,246)">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold" style="color: #06a1b7;">Muhammadali Akbarov</h1>
+          <p class="col-md-8 fs-4">Young banker & Python Backend Developer</p>
+          <div style="margin-bottom: 100px; margin-right: 300px;">
+            <img  class="rounded float-end" style="width: 300px;" src="https://tbcuzprodstorage.blob.core.windows.net/cdn/2012/01/34/b9a418bf8ddb4e53babb0db69bbd68f3/test_deposits.png" alt="">
+          </div>
+          <a href="{% url 'resume' %}"><button class="btn btn-outline-primary" type="button">My Resume</button></a>
+          <a href="{% url 'about-eng' %}"><button class="btn btn-outline-secondary" type="button">About me</button></a>
+          <div class="mt-4 text-left">
+            <a href="https://t.me/livingroompc">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://youtu.be/lhKRgHSpbZw">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://twitter.com/Muhammadali_abc/">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/akbarov-muhammadali-107322202/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-reddit-square"></i>
+            </a>
+            <a href="https://discord.com/muhammadali_abc/#4393">
+              <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://github.com/Muhammadali-Akbarov">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="h-100 p-5 border rounded-3" style="background-color: rgb(241,245,246)">
+            <h2  style="color: #06a1b7;">Why I love Python ?</h2>
+            <p>Python is an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.</p>
+            <!-- <button class="btn btn-outline-secondary" type="button">Example button</button> -->
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="h-100 p-5 bg-light border rounded-3">
+            <h2  style="color: #06a1b7;">Why I love PostgreSQL ? </h2>
+            <p>PostgreSQL , also known as Postgres, is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance. It was originally named POSTGRES, referring to its origins as a successor to the Ingres database developed at the University of California, Berkeley. In 1996, the project was renamed to PostgreSQL to reflect its support for SQL. After a review in 2007, the development team decided to keep the name PostgreSQL and the alias Postgres.</p>
+            <!-- <button class="btn btn-outline-secondary" type="button">Example button</button> -->
+          </div>
+        </div>
+      </div>      
+    </div>
+  </main>
+  
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/odometer/odometer.min.js"></script>
+<script src="../assets/libs/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+<script src="../assets/libs/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="../assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+<script src="../assets/libs/inputmask/dist/jquery.inputmask.min.js"></script>
+<script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+<script src="../assets/libs/quill/dist/quill.min.js"></script>
+<script src="../assets/libs/file-upload-with-preview/dist/file-upload-with-preview.min.js"></script>
+<script src="../assets/libs/dragula/dist/dragula.min.js"></script>
+<script src="../assets/libs/bs-stepper/dist/js/bs-stepper.min.js"></script>
+<script src="../assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+<script src="../assets/libs/jQuery.print/jQuery.print.js"></script>
+<script src="../assets/libs/prismjs/prism.js"></script>
+<script src="../assets/libs/prismjs/components/prism-scss.min.js"></script>
+<script src="../assets/libs/@yaireo/tagify/dist/tagify.min.js"></script>
+<script src="../assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
+<script src="../assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="../assets/libs/tippy.js/dist/tippy-bundle.umd.min.js"></script>
+<script src="../assets/libs/typed.js/lib/typed.min.js"></script>
+<script src="../assets/libs/jsvectormap/dist/js/jsvectormap.min.js"></script>
+<script src="../assets/libs/jsvectormap/dist/maps/world.js"></script>
+<script src="../assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../assets/libs/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+<script src="../assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../assets/libs/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+
+
+
+
+<!-- clipboard -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+
+
+<!-- Theme JS -->
+<script src="../assets/js/theme.min.js"></script>
+      
+    </body>
+  </html>
+{% endblock content %}
+

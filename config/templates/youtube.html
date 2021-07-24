@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="p-5 mb-4 bg-light rounded-3 container" style="max-width: 1000px;">
+        <iframe width="900" height="400" src="https://www.youtube.com/embed/lhKRgHSpbZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="card-body">
+      <h5 class="card-title"  style="color: #06a1b7;">Library    PyTelegramBotApi</h5>
+      <p class="card-text">Bots started to emerge after Telegram announced a new Telegram bot API in 2015. It allows third parties to create bots that will use this messaging application as their main interface. The Telegram bots list is long: many developers have experimented with the provided API to generate unique bots for various purposes.
+        In short, Telegram bots are applications set to perform specific functions, follow instructions, and interact with users. Bots run inside the Telegram environment and do not require an additional installation procedure.
+        By using bots, people can enhance the functionality of Telegram. For instance, you can send daily notifications to your friends, set reminders for yourself, translate messages, receive weather alerts, play games, and so much more.
+        All you need to do is embed a bot into your chat or channel. How can you do this? The procedure is very similar to adding a friend to your conversation and takes only a few seconds.
+        You can easily find bots by clicking the Telegram Search and typing in a specific name of a bot. Usually, creators of bots introduce their products and how they work.
+      </p>
+      <h5 class="card-title"  style="color: #06a1b7;">Security of Telegram Bots: They Compromise Encryption?
+    </h5>
+    <p class="card-text">While Telegram provides flexibility and high-security measures, including the steel-like encryption, specialists worry whether Telegram bots follow the same pattern.
+        As it turns out, they do not. When you add a bot, it does not use the standard encryption that this instant messaging app follows. Therefore, chats and channels that embed bots become easier to intercept.
+        Specialists revealed that bots do not follow the standard MTProto protocol, which is the standard for encrypting messages in Telegram. Instead, they use TLS (Transport Layer Security) protocol applied in HTTPS web encryption.
+        Therefore, when you add bots into chats, you are unknowingly weakening the encryption of your messages.
+        Therefore, it might be best to steer clear of Telegram bots if you need to guarantee 100% security in your chats. However, if you still feel like adding a bot to use new functions while messaging, you are free to consider the following options.
+    </p>
+      
+      <p class="card-text"><small class="text-muted">July 17, 2021, 1:17 p.m.</small></p>
+      <a href="{% url 'home' %}" class="badge badge-info"><button type="button" class="btn btn-outline-secondary"><img  style="width: 25px;" src="https://img.icons8.com/clouds/100/000000/google-home.png"/>← Home</button></a>    
+    
+    </div>
+  </div>
+  
+{% endblock content %} 

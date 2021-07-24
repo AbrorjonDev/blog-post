@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+    <div class="container py-4">
+      <div class="p-5 mb-4 bg-light rounded-3">
+      <h1> Delete Post </h1>
+      
+      <form method='post'> {% csrf_token %}
+      
+        <p>" {{ article.title }} " do you want to delete it? </p>
+        <button class = "btn btn-danger ml-2 type = "sumbit"> Yes </button>
+      </form>
+      </div>
+    </div>  
+    {% endblock content %}
